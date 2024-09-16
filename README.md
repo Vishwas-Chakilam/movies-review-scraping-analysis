@@ -1,4 +1,5 @@
 # Movie Review Scraping and Analysis
+
 ![illustration](https://github.com/Vishwas-Chakilam/movies-review-scraping-analysis/blob/main/Movie%20Scraping%20and%20Analysis.png)
 
 ## Table of Contents
@@ -56,7 +57,8 @@ Movie-Review-Scraping-Analysis/
 ├── omdb_api_fetch.py        # Script for fetching movie data from OMDb API
 ├── requirements.txt         # List of required Python packages
 ├── data/                    # Directory for storing data files
-│   └── imdb_top_250_movies.csv # Output CSV file with movie data
+│   ├── omdb_movies.csv      # Output CSV file with movie data from OMDb API
+│   └── imdb_movies.csv      # Previously used for web scraping (Deprecated)
 ├── analysis/                # Directory for analysis scripts and notebooks
 │   ├── data_cleaning.py     # Script for data cleaning
 │   ├── data_analysis.py     # Script for data analysis
@@ -76,6 +78,8 @@ Data cleaning involves preprocessing the raw data to ensure it is accurate, comp
 - **Removing Duplicates**: Check for and remove any duplicate entries.
 - **Standardizing Formats**: Ensure consistent formatting, such as date formats and text capitalization.
 
+Data cleaning can be performed using the `data_cleaning.py` script located in the `analysis/` directory.
+
 ### 2. Data Analysis
 
 Perform data analysis to extract meaningful insights from the cleaned data. Key areas to focus on include:
@@ -85,11 +89,15 @@ Perform data analysis to extract meaningful insights from the cleaned data. Key 
 - **Top Rated Movies**: Identify movies with the highest ratings and explore their characteristics. This can help in understanding what makes a movie highly rated.
 - **Correlation Analysis**: Explore correlations between different numerical variables, such as IMDb ratings and the number of votes. This analysis helps to understand the relationships between various metrics.
 
+Data analysis can be performed using the `data_analysis.py` script located in the `analysis/` directory.
+
 ### 3. Data Visualization
 
 Visualizing data helps to communicate insights effectively. You can use the following tools for visualization:
 - **Python Libraries**: Use libraries like Matplotlib or Seaborn for creating various types of plots and charts. Examples include histograms for rating distributions, bar charts for genre counts, and line charts for release trends.
 - **Power BI**: Create interactive dashboards with Power BI for a more comprehensive view of the data. Power BI allows you to build visualizations and dashboards that can be shared with others.
+
+Data visualization can be performed using the `data_visualization.py` script located in the `analysis/` directory.
 
 ## Analysis Findings
 
