@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 
 # Define the API key and base URL
-api_key = '77699aa7'
+api_key = 'YOUR API KEY HERE!'
 base_url = 'http://www.omdbapi.com/'
 
 # Function to fetch movie data
